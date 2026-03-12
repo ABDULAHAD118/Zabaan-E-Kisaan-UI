@@ -44,6 +44,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.DROPLET_SSH_KEY }}
           SSH_USER: ${{ secrets.DROPLET_USER }}
           SERVER_IP: ${{ secrets.DROPLET_HOST }}
+          SERVER_PATH: /home/deploy/Zabaan-E-Kissan-ui
         run: |
           echo "$SSH_PRIVATE_KEY" > ssh_key
           chmod 600 ssh_key
