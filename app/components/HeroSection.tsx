@@ -8,7 +8,7 @@ const HeroSection = () => {
           Bilingual Agriculture Assistant (English + Urdu)
         </p>
         <h1 className="mb-6 text-4xl font-bold text-gray-900 dark:text-white md:text-6xl">
-          Zabaan-E-Kisaan
+          Zabaan-E-Kissan
           <span className="block text-green-600">AI Tools for Smarter Farming</span>
         </h1>
         <p className="mx-auto mb-8 max-w-4xl text-lg text-gray-600 dark:text-gray-300 md:text-xl">

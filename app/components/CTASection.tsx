@@ -5,7 +5,7 @@ const CTASection = () => {
     <section className="bg-gray-50 py-20 dark:bg-gray-900">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
-          Ready to Use Zabaan-E-Kisaan?
+          Ready to Use Zabaan-E-Kissan?
         </h2>
         <p className="mb-8 text-lg text-gray-600 dark:text-gray-300 md:text-xl">
           Download the Android app and start using disease detection, bilingual

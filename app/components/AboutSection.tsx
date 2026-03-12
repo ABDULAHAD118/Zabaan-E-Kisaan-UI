@@ -43,7 +43,7 @@ const AboutSection = () => {
               From Field Problem to Action Plan
             </h2>
             <p className="mb-6 text-lg text-white/90">
-              Zabaan-E-Kisaan is designed for real farm operations. Farmers can
+              Zabaan-E-Kissan is designed for real farm operations. Farmers can
               diagnose, ask, verify, and decide quickly without switching
               between multiple tools.
             </p>

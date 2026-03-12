@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zabaan-E-Kisaan - AI Agriculture Assistant",
+  title: "Zabaan-E-Kissan - AI Agriculture Assistant",
   description:
-    "Zabaan-E-Kisaan is a bilingual agriculture assistant with disease detection, AI chatbot support, remote sensing by coordinates, and daily crop price updates.",
+    "Zabaan-E-Kissan is a bilingual agriculture assistant with disease detection, AI chatbot support, remote sensing by coordinates, and daily crop price updates.",
   keywords:
-    "zabaan-e-kisaan, agriculture app, AI chatbot, disease detection, crop prices, remote sensing, bilingual farming app",
-  authors: [{ name: "Zabaan-E-Kisaan Team" }],
+    "zabaan-e-kissan, agriculture app, AI chatbot, disease detection, crop prices, remote sensing, bilingual farming app",
+  authors: [{ name: "Zabaan-E-Kissan Team" }],
   robots: "index, follow",
   openGraph: {
-    title: "Zabaan-E-Kisaan - AI Tools for Smarter Farming",
+    title: "Zabaan-E-Kissan - AI Tools for Smarter Farming",
     description:
       "Detect crop diseases, ask AI in English or Urdu, analyze agricultural land through coordinates, and track daily government price updates.",
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zabaan-E-Kisaan - AI Agriculture Assistant",
+    title: "Zabaan-E-Kissan - AI Agriculture Assistant",
     description:
       "Bilingual farmer assistant with disease detection, remote sensing, and crop market pricing.",
   },

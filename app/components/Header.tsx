@@ -8,14 +8,14 @@ const Header = () => {
         <a href="/#home" className="flex items-center space-x-2">
           <Image
             src="/Zabaan-E-Kissan.png"
-            alt="Zabaan-E-Kisaan logo"
+            alt="Zabaan-E-Kissan logo"
             width={50}
             height={50}
             className="rounded-md"
             priority
           />
           <span className="text-base font-bold text-gray-900 dark:text-white sm:text-lg">
-            Zabaan-E-Kisaan
+            Zabaan-E-Kissan
           </span>
         </a>
 

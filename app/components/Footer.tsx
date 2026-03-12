@@ -31,12 +31,12 @@ const Footer = () => {
             <div className="mb-4 flex items-center space-x-2">
               <Image
                 src="/Zabaan-E-Kissan.png"
-                alt="Zabaan-E-Kisaan logo"
+                alt="Zabaan-E-Kissan logo"
                 width={32}
                 height={32}
                 className="rounded-md"
               />
-              <span className="text-xl font-bold">Zabaan-E-Kisaan</span>
+              <span className="text-xl font-bold">Zabaan-E-Kissan</span>
             </div>
             <p className="text-gray-400">
               Agriculture-first AI platform with bilingual support, remote
@@ -51,7 +51,7 @@ const Footer = () => {
 
         <div className="mt-8 border-t border-gray-800 pt-8 text-center text-gray-400">
           <p>
-            &copy; {new Date().getFullYear()} Zabaan-E-Kisaan. All rights
+            &copy; {new Date().getFullYear()} Zabaan-E-Kissan. All rights
             reserved.
           </p>
         </div>
