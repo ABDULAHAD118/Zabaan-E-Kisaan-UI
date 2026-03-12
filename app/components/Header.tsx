@@ -9,8 +9,8 @@ const Header = () => {
           <Image
             src="/Zabaan-E-Kissan.png"
             alt="Zabaan-E-Kissan logo"
-            width={50}
-            height={50}
+            width={36}
+            height={36}
             className="rounded-md"
             priority
           />
@@ -41,7 +41,7 @@ const Header = () => {
         </nav>
 
         <a
-          href="/Zabaan-E-Kisaan.apk"
+          href="https://github.com/ABDULAHAD118/Zabaan-E-Kissan-UI/releases/download/Agriculture/Zabaan-E-Kissan.apk"
           download
           className="rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-green-700 sm:px-6 sm:py-2.5"
         >

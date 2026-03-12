@@ -1,0 +1,64 @@
+name: Deploy zabaan-e-kissan-ui to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js app
+        env:
+          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
+        run: npm run build
+
+      - name: Prepare deployment package
+        run: |
+          mkdir zabaan-e-kissan-ui-deploy
+          cp -r .next public package.json package-lock.json next.config.js zabaan-e-kissan-ui-deploy/
+          cd zabaan-e-kissan-ui-deploy
+          npm install --production
+
+      - name: Zip deployment package
+        run: |
+          cd zabaan-e-kissan-ui-deploy
+          zip -r ../Zabaan-E-Kissan-ui.zip . > /dev/null 2>&1
+
+      - name: Deploy to server
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.DROPLET_SSH_KEY }}
+          SSH_USER: ${{ secrets.DROPLET_USER }}
+          SERVER_IP: ${{ secrets.DROPLET_HOST }}
+        run: |
+          echo "$SSH_PRIVATE_KEY" > ssh_key
+          chmod 600 ssh_key
+
+          scp -i ssh_key -o StrictHostKeyChecking=no zabaan-e-kissan-ui.zip \
+            $SSH_USER@$SERVER_IP:/tmp
+
+          ssh -i ssh_key -o StrictHostKeyChecking=no $SSH_USER@$SERVER_IP << 'EOF'
+            mkdir -p $SERVER_PATH
+            find $SERVER_PATH -mindepth 1 -delete
+            unzip -o /tmp/Zabaan-E-Kissan-ui.zip -d $SERVER_PATH > /dev/null 2>&1
+            cd $SERVER_PATH
+            pm2 restart Zabaan-E-Kissan-ui || pm2 start npm --name "Zabaan-E-Kissan-ui" -- start
+            rm /tmp/Zabaan-E-Kissan-ui.zip
+          EOF
+
+      - name: Clean up
+        run: rm -f ssh_key Zabaan-E-Kissan-ui.zip

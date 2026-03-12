@@ -10,7 +10,7 @@ const Footer = () => {
   ];
 
   const appLinks = [
-    { name: "Download Android App", href: "/Zabaan-E-Kisaan.apk" },
+    { name: "Download Android App", href: "https://github.com/ABDULAHAD118/Zabaan-E-Kissan-UI/releases/download/Agriculture/Zabaan-E-Kissan.apk" },
     { name: "Bilingual Support", href: "/#home" },
     { name: "Dark Mode UI", href: "/#home" },
     { name: "Daily Price Updates", href: "/#prices" },

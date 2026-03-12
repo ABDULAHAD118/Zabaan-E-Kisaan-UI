@@ -19,7 +19,7 @@ const HeroSection = () => {
 
         <div className="mb-12 flex flex-col justify-center gap-4 sm:flex-row">
           <a
-            href="/Zabaan-E-Kisaan.apk"
+            href="https://github.com/ABDULAHAD118/Zabaan-E-Kissan-UI/releases/download/Agriculture/Zabaan-E-Kissan.apk"
             download
             className="rounded-lg bg-green-600 px-8 py-4 text-center text-lg font-semibold text-white transition-colors hover:bg-green-700"
           >
