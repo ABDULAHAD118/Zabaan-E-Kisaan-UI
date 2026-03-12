@@ -48,7 +48,7 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ssh_key
           chmod 600 ssh_key
 
-          scp -i ssh_key -o StrictHostKeyChecking=no zabaan-e-kissan-ui.zip \
+          scp -i ssh_key -o StrictHostKeyChecking=no Zabaan-E-Kissan-ui.zip \
             $SSH_USER@$SERVER_IP:/tmp
 
           ssh -i ssh_key -o StrictHostKeyChecking=no $SSH_USER@$SERVER_IP << 'EOF'
