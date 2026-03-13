@@ -1,4 +1,4 @@
-name: Deploy zabaan-e-kissan-ui to Server
+name: Deploy Zabaan-E-Kissan to Server
 
 on:
   push:
@@ -45,7 +45,7 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ssh_key
           chmod 600 ssh_key
 
-          scp -i ssh_key -o StrictHostKeyChecking=no Zabaan-E-Kissan-ui.zip \
+          scp -i ssh_key -o StrictHostKeyChecking=no Zabaan-E-Kissan.zip \
             $SSH_USER@$SERVER_IP:/home/deploy
 
           ssh -i ssh_key -o StrictHostKeyChecking=no $SSH_USER@$SERVER_IP << 'EOF'
