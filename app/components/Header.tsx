@@ -43,6 +43,7 @@ const Header = () => {
         <a
           href="https://github.com/ABDULAHAD118/Zabaan-E-Kissan-UI/releases/download/Agriculture/Zabaan-E-Kissan.apk"
           download
+          target="_blank"
           className="rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-green-700 sm:px-6 sm:py-2.5"
         >
           Download App

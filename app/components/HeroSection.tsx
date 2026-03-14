@@ -21,6 +21,7 @@ const HeroSection = () => {
           <a
             href="https://github.com/ABDULAHAD118/Zabaan-E-Kissan-UI/releases/download/Agriculture/Zabaan-E-Kissan.apk"
             download
+            target="_blank"
             className="rounded-lg bg-green-600 px-8 py-4 text-center text-lg font-semibold text-white transition-colors hover:bg-green-700"
           >
             Download Android App

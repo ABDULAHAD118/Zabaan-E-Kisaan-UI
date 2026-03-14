@@ -6,21 +6,20 @@ const Footer = () => {
     { name: "Disease Detection", href: "/#modules" },
     { name: "AI Chatbot", href: "/#workflow" },
     { name: "Remote Sensing", href: "/#workflow" },
-    { name: "Crop Prices", href: "/#prices" },
+    { name: "Crop Prices", href: "/#modules" },
   ];
 
   const appLinks = [
     { name: "Download Android App", href: "https://github.com/ABDULAHAD118/Zabaan-E-Kissan-UI/releases/download/Agriculture/Zabaan-E-Kissan.apk" },
     { name: "Bilingual Support", href: "/#home" },
     { name: "Dark Mode UI", href: "/#home" },
-    { name: "Daily Price Updates", href: "/#prices" },
+    { name: "Daily Price Updates", href: "/#modules" },
   ];
 
   const connectLinks = [
     { name: "Contact", href: "/#contact" },
     { name: "Modules", href: "/#modules" },
     { name: "Workflow", href: "/#workflow" },
-    { name: "Prices", href: "/#prices" },
   ];
 
   return (
