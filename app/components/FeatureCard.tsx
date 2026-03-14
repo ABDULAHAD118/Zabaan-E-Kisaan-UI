@@ -6,7 +6,7 @@ interface FeatureCardProps {
   icon: string;
   title: string;
   description: string;
-  points?: string[];
+  points?: ReadonlyArray<string>;
   id?: string;
 }
 
